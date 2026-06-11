@@ -441,7 +441,6 @@ font-size:20px;
 
 <header>
 
-<i class="fas fa-bars fa-2x"></i>
 
 <div class="logo">
 <span>TOP</span><span>TANK</span>
@@ -524,333 +523,348 @@ SHOP NOW
 
 <section class="category-section" id="tanks">
 
-  <!-- TANKS SECTION -->
-  <h2>Our Products</h2>
+<h2 class="category-title">Our Products</h2>
 
-  <div class="grid" id="tanks" >
+<div class="product-grid">
 
-    <div class="card">
-     
-      
-      <div class="images">
-        <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-99-500x500.jpeg">
-        
-        <h3>1,000l Deluxe Cylindrical Tank</h3>
-        <p>KSh4,500</p>
-      </div>
-      <button class="btn" onclick="order('1,000l Deluxe Cylindrical Tank')">Order Now</button>
-    </div>
+<!-- 1000L DELUXE -->
+<div class="product-card">
+  <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-99-500x500.jpeg" alt="1000L Deluxe Tank">
 
-    <div class="card">
-      
-      
-      <div class="images">
-        <img src="https://www.toptank.com/wp-content/uploads/2021/04/LACNES01_Black_1-scaled-e1621254777975-500x500.jpg">
-        
-        <h3>1,000litre Nestable Tank</h3>
-        <p>KSh4,500</p>
-      </div>
-      <button class="btn" onclick="order('1000L Water Tank')">Order Now</button>
-    </div>
+  <div class="product-info">
+    <h3>1,000L Deluxe Cylindrical Tank</h3>
+    <div class="price">KSh 4,500</div>
 
-    <div class="card">
-      
-      <div class="images">
-        <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACREC05_Black_1-9-500x500.jpg">
-       <h3>1,000litre Rectangular Loft Tank</h3>
-        <p>KSh4,500</p>
-      </div>
-      <button class="btn" onclick="order('1500L Water Tank')">Order Now</button>
-    </div>
+    <button class="order-btn"
+      onclick="event.stopPropagation();orderNow('1,000L Deluxe Cylindrical Tank','4500')">
+      Order Now
+    </button>
+  </div>
+</div>
 
-     <div class="card">
-      
-      <div class="images">
-        <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-70-500x500.jpeg">
-       <h3>1,500l Standard Cylindrical Tank</h3>
-        <p>KSh7,500</p>
-      </div>
-      <button class="btn" onclick="order('1500L Water Tank')">Order Now</button>
-    </div>
+<!-- 1000L NESTABLE -->
+<div class="product-card">
+  <img src="https://www.toptank.com/wp-content/uploads/2021/04/LACNES01_Black_1-scaled-e1621254777975-500x500.jpg" alt="1000L Nestable Tank">
 
-    
-     <div class="card">
-      
-      <div class="images">
-        <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-71-500x500.jpeg">
-       <h3>1,500l Standard Cylindrical Tank</h3>
-        <p>KSh7,500</p>
-      </div>
-      <button class="btn" onclick="order('1500L Water Tank')">Order Now</button>
-    </div>
+  <div class="product-info">
+    <h3>1,000L Nestable Tank</h3>
+    <div class="price">KSh 4,500</div>
 
-    <div class="card">
-      
-      <div class="images">
-        <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-102-500x500.jpeg">
-       <h3>2,000l Deluxe Cylindrical Tank</h3>
-        <p>KSh10,500</p>
-      </div>
-      <button class="btn" onclick="order('1500L Water Tank')">Order Now</button>
-    </div>
+    <button class="order-btn"
+      onclick="event.stopPropagation();orderNow('1,000L Nestable Tank','4500')">
+      Order Now
+    </button>
+  </div>
+</div>
 
-    <div class="card">
-      
-      <div class="images">
-       
-        <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-102-500x500.jpeg">
+<!-- 1000L LOFT -->
+<div class="product-card">
+  <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACREC05_Black_1-9-500x500.jpg" alt="1000L Loft Tank">
 
-        <h3>2,000l Standard Cylindrical Tank</h3>
-        <p>KSh10,500</p>
-      </div>
-      <button class="btn" onclick="order('2000L Water Tank')">Order Now</button>
-    </div>
+  <div class="product-info">
+    <h3>1,000L Rectangular Loft Tank</h3>
+    <div class="price">KSh 4,500</div>
 
-    <div class="card">
-      
-      <div class="images">
-       
-        <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-86-500x500.jpeg">
+    <button class="order-btn"
+      onclick="event.stopPropagation();orderNow('1,000L Rectangular Loft Tank','4500')">
+      Order Now
+    </button>
+  </div>
+</div>
 
-        <h3>10,000l Standard Cylindrical Tank</h3>
-        <p>KSh48,500</p>
-      </div>
-      <button class="btn" onclick="order('2000L Water Tank')">Order Now</button>
-    </div>
+<!-- 1500L -->
+<div class="product-card">
+  <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-70-500x500.jpeg" alt="1500L Tank">
 
-       <div class="card">
-      
-      <div class="images">
-       
-        <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-116-500x500.jpeg">
+  <div class="product-info">
+    <h3>1,500L Standard Cylindrical Tank</h3>
+    <div class="price">KSh 7,500</div>
 
-        <h3>10,000l Deluxe Cylindrical Tank</h3>
-        <p>KSh48,500</p>
-      </div>
-      <button class="btn" onclick="order('2000L Water Tank')">Order Now</button>
-    </div>
-    
-  
+    <button class="order-btn"
+      onclick="event.stopPropagation();orderNow('1,500L Standard Cylindrical Tank','7500')">
+      Order Now
+    </button>
+  </div>
+</div>
+
+<!-- 2000L DELUXE -->
+<div class="product-card">
+  <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-102-500x500.jpeg" alt="2000L Deluxe Tank">
+
+  <div class="product-info">
+    <h3>2,000L Deluxe Cylindrical Tank</h3>
+    <div class="price">KSh 10,500</div>
+
+    <button class="order-btn"
+      onclick="event.stopPropagation();orderNow('2,000L Deluxe Cylindrical Tank','10500')">
+      Order Now
+    </button>
+  </div>
+</div>
+
+<!-- 2000L STANDARD -->
+<div class="product-card">
+  <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-86-500x500.jpeg" alt="2000L Standard Tank">
+
+  <div class="product-info">
+    <h3>2,000L Standard Cylindrical Tank</h3>
+    <div class="price">KSh 10,500</div>
+
+    <button class="order-btn"
+      onclick="event.stopPropagation();orderNow('2,000L Standard Cylindrical Tank','10500')">
+      Order Now
+    </button>
+  </div>
+</div>
+
+<!-- 10000L STANDARD -->
+<div class="product-card">
+  <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-116-500x500.jpeg" alt="10000L Standard Tank">
+
+  <div class="product-info">
+    <h3>10,000L Standard Cylindrical Tank</h3>
+    <div class="price">KSh 48,500</div>
+
+    <button class="order-btn"
+      onclick="event.stopPropagation();orderNow('10,000L Standard Cylindrical Tank','48500')">
+      Order Now
+    </button>
+  </div>
+</div>
+
+<!-- 10000L DELUXE -->
+<div class="product-card">
+  <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-116-500x500.jpeg" alt="10000L Deluxe Tank">
+
+  <div class="product-info">
+    <h3>10,000L Deluxe Cylindrical Tank</h3>
+    <div class="price">KSh 48,500</div>
+
+    <button class="order-btn"
+      onclick="event.stopPropagation();orderNow('10,000L Deluxe Cylindrical Tank','48500')">
+      Order Now
+    </button>
+  </div>
+</div>
+
+</div>
 </section>
-
 <!-- AGRICULTURE SECTION -->
 
 <section class="category-section" id="agriculture">
 
 <h2 class="category-title">Agriculture</h2>
+
 <div class="product-grid">
 
+<!-- HOPPER TANK 3500L -->
 <div class="product-card"
 onclick="openProduct(
-'Wheelbarrow',
-'Heavy duty farm wheelbarrow.',
-'KES 5,500',
-'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800'
+'Hopper Tank 3500L',
+'3,500 litre Conical Hopper Tank',
+'KES 16,500',
+'https://www.toptank.com/wp-content/uploads/2021/05/canonical-500x500-1-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/canonical-500x500-1-500x500.jpg">
 
 <div class="product-info">
-<h3>Hopper Tank</h3>
-<p>3,500litre Conical.</p>
-<div class="price">KSh16,500</div>
+<h3>3,500L Conical Hopper Tank</h3>
+<div class="price">KSh 16,500</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Wheelbarrow','5500')">
+onclick="event.stopPropagation();orderNow('3,500L Conical Hopper Tank','16500')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- 3000L HOPPER -->
 <div class="product-card"
 onclick="openProduct(
-'Watering Can',
-'Durable plastic watering can.',
-'KES 950',
-'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800'
+'3,000L Conical Hopper Tank',
+'3,000 litre Conical Hopper Tank',
+'KES 14,500',
+'https://www.toptank.com/wp-content/uploads/2021/05/canonical-500x500-1-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/canonical-500x500-1-500x500.jpg">
 
 <div class="product-info">
-<h3>3,000litre Conical Hopper Tank</h3>
-
-<div class="price">KSh14,500</div>
+<h3>3,000L Conical Hopper Tank</h3>
+<div class="price">KSh 14,500</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Watering Can','950')">
+onclick="event.stopPropagation();orderNow('3,000L Conical Hopper Tank','14500')">
 Order Now
 </button>
 
 </div>
 </div>
 
-
+<!-- ROUND PLANTER 1 -->
 <div class="product-card"
 onclick="openProduct(
-'Seedling Tray',
-'Professional seed starter tray.',
-'KES 650',
-'https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=800'
+'Round Beige Planter 50cm',
+'Modern stone-look round planter',
+'KES 5,040',
+'https://www.toptank.com/wp-content/uploads/2025/03/LACPLNTS09_EarthBrown_2-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2025/03/LACPLNTS09_EarthBrown_2-500x500.jpg">
 
 <div class="product-info">
-<h3>Round Beige Planter Pot – Modern Linear Wavy Stone-look Finish | 50cm(H) x 40cm(W)</h3>
-
-<div class="price">KSh5,040</div>
+<h3>Round Beige Planter – 50cm</h3>
+<div class="price">KSh 5,040</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Seedling Tray','650')">
+onclick="event.stopPropagation();orderNow('Round Beige Planter 50cm','5040')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- ROUND PLANTER 2 -->
 <div class="product-card"
 onclick="openProduct(
-'Seedling Tray',
-'Professional seed starter tray.',
-'KES 650',
-'https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=800'
+'Round Beige Planter 50cm',
+'Modern stone-look round planter',
+'KES 5,040',
+'https://www.toptank.com/wp-content/uploads/2025/03/LACPLNTS08_Beige_2--500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2025/03/LACPLNTS08_Beige_2--500x500.jpg">
 
 <div class="product-info">
-<h3>Round Beige Planter Pot – Modern Linear Wavy Stone-look Finish | 50cm(H) x 40cm(W)</h3>
-
-<div class="price">KSh5,040</div>
+<h3>Round Beige Planter – 50cm</h3>
+<div class="price">KSh 5,040</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Seedling Tray','650')">
+onclick="event.stopPropagation();orderNow('Round Beige Planter 50cm','5040')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- RECTANGULAR PLANTER -->
 <div class="product-card"
 onclick="openProduct(
-'Seedling Tray',
-'Professional seed starter tray.',
-'KES 650',
-'https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=800'
+'Tall Rectangular Planter',
+'75cm tall modern planter',
+'KES 9,180',
+'https://www.toptank.com/wp-content/uploads/2025/03/LACPLNTS10_CharcoalGrey_2-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2025/03/LACPLNTS10_CharcoalGrey_2-500x500.jpg">
 
 <div class="product-info">
-<h3>Tall Rectangular Beige Planter – Modern Linear Wavy Stone-look Finish | 75cm(H) x 32cm(W)</h3>
-
-<div class="price">KSh9,180</div>
+<h3>Tall Rectangular Planter – 75cm</h3>
+<div class="price">KSh 9,180</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Seedling Tray','650')">
+onclick="event.stopPropagation();orderNow('Tall Rectangular Planter','9180')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- LARGE ROUND -->
 <div class="product-card"
 onclick="openProduct(
-'Seedling Tray',
-'Professional seed starter tray.',
-'KES 650',
-'https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=800'
+'Large Round Planter 76cm',
+'TopPlanter large round design',
+'KES 11,250',
+'https://www.toptank.com/wp-content/uploads/2024/04/LACPLNTS04_CharcoalGrey_6-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2024/04/LACPLNTS04_CharcoalGrey_6-500x500.jpg">
 
 <div class="product-info">
-<h3>TopPlanter: Large Round Planter – 76x76cm</h3>
-
-<div class="price">KSh11,250</div>
+<h3>Large Round Planter – 76cm</h3>
+<div class="price">KSh 11,250</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Seedling Tray','650')">
+onclick="event.stopPropagation();orderNow('Large Round Planter 76cm','11250')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- LARGE SQUARE -->
 <div class="product-card"
 onclick="openProduct(
-'Seedling Tray',
-'Professional seed starter tray.',
-'KES 650',
-'https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=800'
+'Large Square Planter 76cm',
+'Modern square planter',
+'KES 11,250',
+'https://www.toptank.com/wp-content/uploads/2024/04/LACPLNTS02_CharcoalGrey_1-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2024/04/LACPLNTS02_CharcoalGrey_1-500x500.jpg">
 
 <div class="product-info">
-<h3>TopPlanter: Large Square Planter – 76x69cm</h3>
-
-<div class="price">KSh11,250</div>
+<h3>Large Square Planter – 76cm</h3>
+<div class="price">KSh 11,250</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Seedling Tray','650')">
+onclick="event.stopPropagation();orderNow('Large Square Planter 76cm','11250')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- ANGULAR PLANTER -->
 <div class="product-card"
 onclick="openProduct(
-'Seedling Tray',
-'Professional seed starter tray.',
-'KES 650',
-'https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=800'
+'Angular Planter 76cm',
+'Tall angular modern planter',
+'KES 5,040',
+'https://www.toptank.com/wp-content/uploads/2024/04/LACPLNTS07_Grey_2-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2024/04/LACPLNTS07_Grey_2-500x500.jpg">
 
 <div class="product-info">
-<h3>TopPlanter: Large Tall Angular Planter – 76x39cm</h3>
-
-<div class="price">KSh5,040</div>
+<h3>Large Angular Planter – 76cm</h3>
+<div class="price">KSh 5,040</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Seedling Tray','650')">
+onclick="event.stopPropagation();orderNow('Angular Planter 76cm','5040')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- MEDIUM ROUND -->
 <div class="product-card"
 onclick="openProduct(
-'Watering Can',
-'Durable plastic watering can.',
-'KES 950',
-'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800'
+'Medium Round Planter 61cm',
+'Medium size modern planter',
+'KES 7,470',
+'https://www.toptank.com/wp-content/uploads/2024/04/LACPLNTS04_CharcoalGrey_6-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2024/04/LACPLNTS04_CharcoalGrey_6-500x500.jpg">
 
 <div class="product-info">
-<h3>TopPlanter: Medium Round Planter – 61x61cm</h3>
-
-<div class="price">KSh7,470</div>
+<h3>Medium Round Planter – 61cm</h3>
+<div class="price">KSh 7,470</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Watering Can','950')">
+onclick="event.stopPropagation();orderNow('Medium Round Planter 61cm','7470')">
 Order Now
 </button>
 
 </div>
 </div>
 
-
 </div>
-
 </section>
 
 <!-- BINS SECTION -->
@@ -861,43 +875,43 @@ Order Now
 
 <div class="product-grid">
 
+<!-- 1100L BIN -->
 <div class="product-card"
 onclick="openProduct(
-'120L Dustbin',
-'Durable outdoor waste bin.',
-'KES 3,200',
-'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800'
+'1100L Garbage Bin with Wheels',
+'Heavy-duty waste collection bin',
+'KES 50,670',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACB1N19_-Green_2-1-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACB1N19_-Green_2-1-500x500.jpg">
 
 <div class="product-info">
-<h3>1,100litre Garbage Bin with Wheels</h3>
-<p>Heavy-duty waste collection bin.</p>
-<div class="price">KSh50,670</div>
+<h3>1,100L Garbage Bin with Wheels</h3>
+<div class="price">KSh 50,670</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('120L Dustbin','3200')">
+onclick="event.stopPropagation();orderNow('1100L Garbage Bin with Wheels','50670')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- 240L BIN -->
 <div class="product-card"
 onclick="openProduct(
 '240L Dustbin',
-'Large commercial waste bin.',
+'Large capacity waste bin',
 'KES 5,900',
-'https://images.unsplash.com/photo-1528323273322-d81458248d40?w=800'
+'https://www.toptank.com/wp-content/uploads/2021/05/LACBIN17_Blue_2-1-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACBIN17_Blue_2-1-500x500.jpg">
 
 <div class="product-info">
 <h3>240L Dustbin</h3>
-<p>Large capacity garbage collection.</p>
-<div class="price">KES 5,900</div>
+<div class="price">KSh 5,900</div>
 
 <button class="order-btn"
 onclick="event.stopPropagation();orderNow('240L Dustbin','5900')">
@@ -907,139 +921,138 @@ Order Now
 </div>
 </div>
 
+<!-- 120L BIN -->
 <div class="product-card"
 onclick="openProduct(
-'660L Bin',
-'Industrial waste management bin.',
-'KES 18,500',
-'https://images.unsplash.com/photo-1515169067868-5387ec356754?w=800'
+'120L Garbage Bin with Wheels',
+'Medium size waste bin',
+'KES 11,250',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACBIN28_Black_2-1-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACBIN28_Black_2-1-500x500.jpg">
 
 <div class="product-info">
-<h3>120litre Garbage Bin with Wheels</h3>
-
-<div class="price">KSh11,250</div>
+<h3>120L Garbage Bin with Wheels</h3>
+<div class="price">KSh 11,250</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('660L Bin','18500')">
+onclick="event.stopPropagation();orderNow('120L Garbage Bin','11250')">
 Order Now
 </button>
 
 </div>
 </div>
 
-
+<!-- 180L BIN -->
 <div class="product-card"
 onclick="openProduct(
-'660L Bin',
-'Industrial waste management bin.',
-'KES 18,500',
-'https://images.unsplash.com/photo-1515169067868-5387ec356754?w=800'
+'180L Garbage Bin with Wheels',
+'Durable waste bin with wheels',
+'KES 14,850',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACBIN17_Red_1-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACBIN17_Red_1-500x500.jpg">
 
 <div class="product-info">
-<h3>180litre Garbage Bin with Wheels</h3>
-<div class="price">KSh14,850</div>
+<h3>180L Garbage Bin with Wheels</h3>
+<div class="price">KSh 14,850</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('660L Bin','18500')">
+onclick="event.stopPropagation();orderNow('180L Garbage Bin','14850')">
 Order Now
 </button>
 
 </div>
 </div>
 
-
+<!-- 750L BIN -->
 <div class="product-card"
 onclick="openProduct(
-'Traffic Cone',
-'Reflective traffic cone.',
-'KES 750',
-'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800'
+'750L Garbage Bin',
+'Large industrial waste bin',
+'KES 45,450',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACB1N19_Grey_11-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACB1N19_Grey_11-500x500.jpg">
 
 <div class="product-info">
-<h3>750litre Garbage Bin with Wheels</h3>
-
-<div class="price">KSh45,450</div>
+<h3>750L Garbage Bin</h3>
+<div class="price">KSh 45,450</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Traffic Cone','750')">
+onclick="event.stopPropagation();orderNow('750L Garbage Bin','45450')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- 90L BIN + HANDLE -->
 <div class="product-card"
 onclick="openProduct(
-'Traffic Cone',
-'Reflective traffic cone.',
-'KES 750',
-'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800'
+'90L Garbage Bin with Wheels & Handle',
+'Small mobile waste bin',
+'KES 10,800',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACBIN28_Yellow_7-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACBIN28_Yellow_7-500x500.jpg">
 
 <div class="product-info">
-<h3>90litre Garbage Bin With Wheels & Handle</h3>
-
-<div class="price">KSh10,800</div>
+<h3>90L Bin with Wheels & Handle</h3>
+<div class="price">KSh 10,800</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Traffic Cone','750')">
+onclick="event.stopPropagation();orderNow('90L Garbage Bin with Handle','10800')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- 90L FOOT PEDAL -->
 <div class="product-card"
 onclick="openProduct(
-'Traffic Cone',
-'Reflective traffic cone.',
-'KES 750',
-'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800'
+'90L Garbage Bin with Foot Pedal',
+'Pedal-operated hygienic bin',
+'KES 12,825',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACBIN34_Red_6-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACBIN34_Red_6-500x500.jpg">
 
 <div class="product-info">
-<h3>90litre Garbage Bin With Wheels, Handle & Foot Pedal</h3>
-
-<div class="price">KSh12,825</div>
+<h3>90L Bin with Wheels & Foot Pedal</h3>
+<div class="price">KSh 12,825</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Traffic Cone','750')">
+onclick="event.stopPropagation();orderNow('90L Garbage Bin Foot Pedal','12825')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- 90L HEX -->
 <div class="product-card"
 onclick="openProduct(
-'Traffic Cone',
-'Reflective traffic cone.',
-'KES 750',
-'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800'
+'90L Hexagonal Dustbin',
+'Compact outdoor bin',
+'KES 7,020',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACBIN36_Green_5-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACBIN36_Green_5-500x500.jpg">
 
 <div class="product-info">
-<h3>90litre Hexagonal Dustbin</h3>
-
-<div class="price">KSh7,020</div>
+<h3>90L Hexagonal Dustbin</h3>
+<div class="price">KSh 7,020</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Traffic Cone','750')">
+onclick="event.stopPropagation();orderNow('90L Hexagonal Dustbin','7020')">
 Order Now
 </button>
 
@@ -1047,7 +1060,6 @@ Order Now
 </div>
 
 </div>
-
 </section>
 <!-- ROAD SAFETY SECTION -->
 
@@ -1057,71 +1069,69 @@ Order Now
 
 <div class="product-grid">
 
-
-
+<!-- ANGULAR ROAD BARRIER -->
 <div class="product-card"
 onclick="openProduct(
-'Traffic Cone',
-'Reflective traffic cone.',
-'KES 750',
-'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800'
+'Angular Road Barrier',
+'Heavy duty road safety barrier',
+'KES 8,775',
+'https://www.toptank.com/wp-content/uploads/2021/05/Road-Barrier_1-e1621257362148-500x500.png'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/Road-Barrier_1-e1621257362148-500x500.png">
 
 <div class="product-info">
 <h3>Angular Road Barrier</h3>
-
-<div class="price">KSh8,775</div>
+<div class="price">KSh 8,775</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Traffic Cone','750')">
+onclick="event.stopPropagation();orderNow('Angular Road Barrier','8775')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- ROAD TRAFFIC CONE -->
 <div class="product-card"
 onclick="openProduct(
-'Speed Bump',
-'Heavy duty speed calming bump.',
-'KES 4,800',
-'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800'
+'Road Traffic Cone',
+'High visibility traffic safety cone',
+'KES 2,070',
+'https://www.toptank.com/wp-content/uploads/2021/05/Road-Traffic-Cone_2-500x500.png'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/Road-Traffic-Cone_2-500x500.png">
 
 <div class="product-info">
-<h3>Road Traffic Triangle</h3>
-
-<div class="price">KSh2,070</div>
+<h3>Road Traffic Cone</h3>
+<div class="price">KSh 2,070</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Speed Bump','4800')">
+onclick="event.stopPropagation();orderNow('Road Traffic Cone','2070')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- SLIMLINE INTERLOCKABLE BARRIER -->
 <div class="product-card"
 onclick="openProduct(
-'Speed Bump',
-'Heavy duty speed calming bump.',
-'KES 4,800',
-'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800'
+'Slimline Interlockable Road Barrier',
+'Interlockable plastic road safety barrier system',
+'KES 9,270',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACBARRIER04_Red_2-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACBARRIER04_Red_2-500x500.jpg">
 
 <div class="product-info">
 <h3>Slimline Interlockable Road Barrier</h3>
-
-<div class="price">KSh9,270</div>
+<div class="price">KSh 9,270</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Speed Bump','4800')">
+onclick="event.stopPropagation();orderNow('Slimline Interlockable Road Barrier','9270')">
 Order Now
 </button>
 
@@ -1129,9 +1139,7 @@ Order Now
 </div>
 
 </div>
-
 </section>
-
 <!-- SANITATION SECTION -->
 
 <section class="category-section" id="sanitation">
@@ -1140,132 +1148,138 @@ Order Now
 
 <div class="product-grid">
 
+<!-- 100L HANDWASH BASIN -->
 <div class="product-card"
 onclick="openProduct(
-'Hand Wash Station',
-'Portable hand washing unit.',
-'KES 15,000',
-'https://images.unsplash.com/photo-1584515933487-779824d29309?w=800'
+'100L Handwash Basin',
+'Portable 100 litre handwashing station',
+'KES 8,730',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACBASIN02_2-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACBASIN02_2-500x500.jpg">
 
 <div class="product-info">
-<h3>100litre Handwash Basin</h3>
-<div class="price">KSh8,730</div>
+<h3>100L Handwash Basin</h3>
+<div class="price">KSh 8,730</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Hand Wash Station','15000')">
+onclick="event.stopPropagation();orderNow('100L Handwash Basin','8730')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- 115CM MANHOLE -->
 <div class="product-card"
 onclick="openProduct(
-'Portable Toilet',
-'Heavy duty mobile sanitation unit.',
-'KES 85,000',
-'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800'
+'115cm PE Manhole',
+'Durable polyethylene manhole system',
+'KES 20,700',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACMAN01_Black_2-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACMAN01_Black_2-500x500.jpg">
 
 <div class="product-info">
 <h3>115cm PE Manhole</h3>
-<div class="price">KSh20,700</div>
+<div class="price">KSh 20,700</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Portable Toilet','85000')">
+onclick="event.stopPropagation();orderNow('115cm PE Manhole','20700')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- 140CM MANHOLE -->
 <div class="product-card"
 onclick="openProduct(
-'Soap Dispenser',
-'Wall mounted sanitizer dispenser.',
-'KES 1,500',
-'https://images.unsplash.com/photo-1584744982491-665216d95f8b?w=800'
+'140cm PE Manhole',
+'Large polyethylene manhole unit',
+'KES 27,900',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACMAN02_NA_1-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACMAN02_NA_1-500x500.jpg">
 
 <div class="product-info">
 <h3>140cm PE Manhole</h3>
-<div class="price">KSh27,900</div>
+<div class="price">KSh 27,900</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Soap Dispenser','1500')">
+onclick="event.stopPropagation();orderNow('140cm PE Manhole','27900')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- 170CM MANHOLE -->
 <div class="product-card"
 onclick="openProduct(
-'Soap Dispenser',
-'Wall mounted sanitizer dispenser.',
-'KES 1,500',
-'https://images.unsplash.com/photo-1584744982491-665216d95f8b?w=800'
+'170cm PE Manhole',
+'Extra large PE manhole system',
+'KES 31,050',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACMAN03_2-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACMAN03_2-500x500.jpg">
 
 <div class="product-info">
 <h3>170cm PE Manhole</h3>
-<div class="price">KSh31,050</div>
+<div class="price">KSh 31,050</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Soap Dispenser','1500')">
+onclick="event.stopPropagation();orderNow('170cm PE Manhole','31050')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- 190CM MANHOLE -->
 <div class="product-card"
 onclick="openProduct(
-'Soap Dispenser',
-'Wall mounted sanitizer dispenser.',
-'KES 1,500',
-'https://images.unsplash.com/photo-1584744982491-665216d95f8b?w=800'
+'190cm PE Manhole',
+'Heavy duty large capacity manhole',
+'KES 37,260',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACMAN03_2-1-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACMAN03_2-1-500x500.jpg">
 
 <div class="product-info">
 <h3>190cm PE Manhole</h3>
-<div class="price">KSh37,260</div>
+<div class="price">KSh 37,260</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Soap Dispenser','1500')">
+onclick="event.stopPropagation();orderNow('190cm PE Manhole','37260')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- PIT LATRINE SLAB -->
 <div class="product-card"
 onclick="openProduct(
-'Soap Dispenser',
-'Wall mounted sanitizer dispenser.',
-'KES 1,500',
-'https://images.unsplash.com/photo-1584744982491-665216d95f8b?w=800'
+'Pit Latrine Slab',
+'Durable reinforced sanitation slab',
+'KES 9,270',
+'https://www.toptank.com/wp-content/uploads/2021/05/pitslab-500x500-1-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/pitslab-500x500-1-500x500.jpg">
 
 <div class="product-info">
 <h3>Pit Latrine Slab</h3>
-<div class="price">KSh9,270</div>
+<div class="price">KSh 9,270</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Soap Dispenser','1500')">
+onclick="event.stopPropagation();orderNow('Pit Latrine Slab','9270')">
 Order Now
 </button>
 
@@ -1273,7 +1287,6 @@ Order Now
 </div>
 
 </div>
-
 </section>
 
 <!-- MISCELLANEOUS SECTION -->
@@ -1284,163 +1297,168 @@ Order Now
 
 <div class="product-grid">
 
+<!-- 1 TONNE PALLET -->
 <div class="product-card"
 onclick="openProduct(
-'Storage Box',
-'Multipurpose storage solution.',
-'KES 2,500',
-'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800'
+'1 Tonne Pallet',
+'Heavy duty industrial pallet',
+'KES 9,810',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACPLT02_Black_3-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACPLT02_Black_3-500x500.jpg">
 
 <div class="product-info">
-<h3>1tonne Pallet</h3>
-<div class="price">KSh9,810</div>
+<h3>1 Tonne Pallet</h3>
+<div class="price">KSh 9,810</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Storage Box','2500')">
+onclick="event.stopPropagation();orderNow('1 Tonne Pallet','9810')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- 30L COOLER BOX -->
 <div class="product-card"
 onclick="openProduct(
-'Plastic Crate',
-'Heavy duty stackable crate.',
-'KES 1,850',
-'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800'
+'30L TopKool Cooler Box',
+'Portable insulated cooler box',
+'KES 7,200',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACCLBOX04_Green_5-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACCLBOX04_Green_5-500x500.jpg">
 
 <div class="product-info">
-<h3>30litre TopKool Cooler Box</h3>
-<div class="price">KSh7,200</div>
+<h3>30L TopKool Cooler Box</h3>
+<div class="price">KSh 7,200</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Plastic Crate','1850')">
+onclick="event.stopPropagation();orderNow('30L TopKool Cooler Box','7200')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- 60L COOLER BOX -->
 <div class="product-card"
 onclick="openProduct(
-'Utility Container',
-'Multi-purpose utility container.',
-'KES 3,800',
-'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800'
+'60L TopKool Cooler Box',
+'Medium capacity insulated cooler',
+'KES 9,810',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACCLBOX01_Yellow_60L_5-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACCLBOX01_Yellow_60L_5-500x500.jpg">
 
 <div class="product-info">
-<h3>60litre TopKool Cooler box</h3>
-<div class="price">KSh9,810</div>
+<h3>60L TopKool Cooler Box</h3>
+<div class="price">KSh 9,810</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Utility Container','3800')">
+onclick="event.stopPropagation();orderNow('60L TopKool Cooler Box','9810')">
 Order Now
 </button>
 
 </div>
 </div>
 
-
+<!-- 80L COOLER BOX -->
 <div class="product-card"
 onclick="openProduct(
-'Utility Container',
-'Multi-purpose utility container.',
-'KES 3,800',
-'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800'
+'80L TopKool Cooler Box',
+'Large insulated cooler box',
+'KES 14,940',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACCLBOX02_Blue_80L_5-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACCLBOX02_Blue_80L_5-500x500.jpg">
 
 <div class="product-info">
-<h3>80litre TopKool Cooler box</h3>
-<div class="price">KSh14,940</div>
+<h3>80L TopKool Cooler Box</h3>
+<div class="price">KSh 14,940</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Utility Container','3800')">
+onclick="event.stopPropagation();orderNow('80L TopKool Cooler Box','14940')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- HALF TONNE PALLET -->
 <div class="product-card"
 onclick="openProduct(
-'Utility Container',
-'Multi-purpose utility container.',
-'KES 3,800',
-'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800'
+'Half Tonne Pallet',
+'Medium duty storage pallet',
+'KES 8,820',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACPLT02_Black_2-1-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACPLT02_Black_2-1-500x500.jpg">
 
 <div class="product-info">
 <h3>Half Tonne Pallet</h3>
-<div class="price">KSh8,820</div>
+<div class="price">KSh 8,820</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Utility Container','3800')">
+onclick="event.stopPropagation();orderNow('Half Tonne Pallet','8820')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- TOPDESK LARGE -->
 <div class="product-card"
 onclick="openProduct(
-'Utility Container',
-'Multi-purpose utility container.',
-'KES 3,800',
-'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800'
+'TopDesk School Chair Large',
+'School desk with storage compartment',
+'KES 8,010',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACDESK01_Blue_3-1-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACDESK01_Blue_3-1-500x500.jpg">
 
 <div class="product-info">
-<h3>TopDesk School Chair With Integrated Desk & Storage (Large)</h3>
-<div class="price">KSh8,010</div>
+<h3>TopDesk School Chair (Large)</h3>
+<div class="price">KSh 8,010</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Utility Container','3800')">
+onclick="event.stopPropagation();orderNow('TopDesk Chair Large','8010')">
 Order Now
 </button>
 
 </div>
 </div>
 
+<!-- TOPDESK MEDIUM -->
 <div class="product-card"
 onclick="openProduct(
-'Utility Container',
-'Multi-purpose utility container.',
-'KES 3,800',
-'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800'
+'TopDesk School Chair Medium',
+'Compact school desk with storage',
+'KES 6,750',
+'https://www.toptank.com/wp-content/uploads/2021/05/LACDESK01_Blue_2-500x500.jpg'
 )">
 
 <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACDESK01_Blue_2-500x500.jpg">
 
 <div class="product-info">
-<h3>
-TopDesk School Chair With Integrated Desk & Storage (Medium)</h3>
-<div class="price">KSh6,750</div>
+<h3>TopDesk School Chair (Medium)</h3>
+<div class="price">KSh 6,750</div>
 
 <button class="order-btn"
-onclick="event.stopPropagation();orderNow('Utility Container','3800')">
+onclick="event.stopPropagation();orderNow('TopDesk Chair Medium','6750')">
 Order Now
 </button>
 
 </div>
 </div>
-</div>
 
+</div>
 </section>
 
 </div>
@@ -1484,10 +1502,7 @@ Order Now
 Home
 </a>
 
-<a href="#" onclick="showCart()">
-<i class="fas fa-cart-shopping"></i>
-Cart
-</a>
+
 
 <a href="#">
 <i class="fas fa-user"></i>
