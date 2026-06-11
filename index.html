@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>TOPTANK</title>
-
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -194,7 +194,24 @@ object-fit:cover;
 .product-info{
 padding:15px;
 }
+.payments {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Arial, sans-serif;
+}
 
+.payment-icon {
+  font-size: 28px;
+  color: #333;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.payment-icon:hover {
+  transform: scale(1.2);
+  color: #007bff;
+}
 .product-info h3{
 margin-bottom:10px;
 }
@@ -319,11 +336,15 @@ font-size:50px;
 font-size:20px;
 }
 
-.hero-image{
-margin-top:25px;
+.hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  overflow: hidden;
 }
 
-}
 .water-tank-section{
   font-family: Arial, sans-serif;
 }
@@ -460,7 +481,10 @@ SHOP NOW
 
 </div>
 
-<div class="hero-image"></div>
+<div class="hero-image">
+
+            <img style="width: fit-content; height: fit-content;" src="https://www.tandc.co.ke/bkslk/aser/ageiesl/sasdlk/toptank/2021/wp-content/uploads/2021/04/TopTank-Home-Slider_Artboard-9.png">
+</div>
 
 </section>
 
@@ -1670,16 +1694,19 @@ closeModal();
         Pay easily and securely using mobile or card.
       </p>
 
-      <div class="payments">
-        <span>We Accept:</span>
-        <img src="mpesa.png" alt="mpesa">
-        <img src="visa.png" alt="visa">
-        <img src="mastercard.png" alt="mastercard">
-      </div>
+     <div class="payments">
+  <span>We Accept:</span>
 
-      <a href="#" class="btn-yellow">BUY A TANK NOW</a>
+  <i class="bx bxl-visa payment-icon" title="Visa"></i>
+  <i class="bx bxl-mastercard payment-icon" title="MasterCard"></i>
+  <i class="bx bx-mobile payment-icon" title="M-Pesa"></i>
+</div>
 
-      <img src="tanks.png" class="product-img" alt="water tanks">
+      <a href="https://wa.me/254117958244" class="btn-yellow" target="_blank">
+  BUY A TANK NOW
+</a>
+
+      <img style="width: 100px; height: 100px;" src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-99-500x500.jpeg" class="product-img" alt="water tanks">
     </div>
 
   </div>
