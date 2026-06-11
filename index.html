@@ -4,479 +4,1720 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TOP Tank Company Kenya | Water Tanks & Storage Solutions</title>
+<title>TOPTANK</title>
 
-<meta name="description" content="TOP Tank Company Kenya supplies durable water tanks from 500L to 10000L across Kenya at affordable prices.">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
-:root {
-    --bg: #0b1220;
-    --card: #111a2e;
-    --green: #2ecc71;
-    --blue: #1f6feb;
-    --text: #e6edf3;
-    --muted: #9aa4b2;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+body{
+background:#f4f4f4;
+padding-bottom:80px;
 }
 
-body {
-    background: var(--bg);
-    color: var(--text);
+header{
+height:70px;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 20px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+position:sticky;
+top:0;
+z-index:1000;
 }
 
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 8%;
-    background: #0f172a;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.logo{
+font-size:35px;
+font-weight:bold;
 }
 
-.logo {
-    font-size: 20px;
-    font-weight: bold;
+.logo span:first-child{
+color:#ffd400;
 }
 
-.header-actions a {
-    margin-left: 10px;
-    padding: 8px 14px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
+.logo span:last-child{
+color:#2144a0;
 }
 
-.call { background: var(--blue); color: white; }
-.wa { background: var(--green); color: white; }
+.icons{
+display:flex;
+gap:20px;
+font-size:22px;
+align-items:center;
+}
+
+.cart{
+position:relative;
+cursor:pointer;
+}
+
+.cart span{
+position:absolute;
+top:-8px;
+right:-8px;
+background:red;
+color:white;
+width:18px;
+height:18px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:11px;
+}
+
+.hero{
+background:#98a600;
+padding:50px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:65px;
+line-height:1;
+color:#ffd400;
+}
+
+.hero-text p{
+font-size:24px;
+color:white;
+margin-top:20px;
+line-height:1.4;
+}
+
+.shop-btn{
+display:inline-block;
+margin-top:25px;
+background:#ffe84d;
+color:black;
+text-decoration:none;
+padding:15px 35px;
+font-weight:bold;
+border-radius:5px;
+}
+
+.hero-image{
+width:260px;
+height:320px;
+background:#222;
+border-radius:25px;
+}
+
+.categories{
+padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+gap:15px;
+}
+
+.card{
+background:white;
+padding:25px;
+text-align:center;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card i{
+font-size:60px;
+color:#2144a0;
+margin-bottom:15px;
+}
+
+.card h3{
+color:#2144a0;
+}
+
+.products-container{
+padding:20px;
+display:none;
+}
+
+.category-section{
+display:none;
+}
+
+.category-title{
+font-size:30px;
+margin-bottom:20px;
+color:#2144a0;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.product-card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.product-card:hover{
+transform:translateY(-5px);
+}
+
+.product-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.product-info{
+padding:15px;
+}
+
+.product-info h3{
+margin-bottom:10px;
+}
+
+.product-info p{
+color:#666;
+font-size:14px;
+margin-bottom:10px;
+}
+
+.price{
+font-size:20px;
+font-weight:bold;
+color:#2144a0;
+margin-bottom:15px;
+}
+
+.order-btn{
+width:100%;
+padding:12px;
+border:none;
+background:#2144a0;
+color:white;
+cursor:pointer;
+font-weight:bold;
+}
+
+.order-btn:hover{
+background:#18337a;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:90px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:38px;
+color:white;
+text-decoration:none;
+z-index:100;
+}
+
+.bottom-nav{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+height:70px;
+background:#2144a0;
+display:flex;
+justify-content:space-around;
+align-items:center;
+}
+
+.bottom-nav a{
+text-decoration:none;
+color:white;
+display:flex;
+flex-direction:column;
+align-items:center;
+font-size:14px;
+}
+
+.bottom-nav .active{
+color:#ffd400;
+}
+
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.7);
+justify-content:center;
+align-items:center;
+padding:20px;
+z-index:5000;
+}
+
+.modal-content{
+background:white;
+width:100%;
+max-width:500px;
+border-radius:10px;
+padding:20px;
+text-align:center;
+}
+
+.modal-content img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.close{
+float:right;
+font-size:28px;
+cursor:pointer;
+}
+
+@media(max-width:768px){
+
+.hero{
+justify-content:center;
+}
+
+.hero-text h1{
+font-size:50px;
+}
+
+.hero-text p{
+font-size:20px;
+}
+
+.hero-image{
+margin-top:25px;
+}
+
+}
+.water-tank-section{
+  font-family: Arial, sans-serif;
+}
 
 /* HERO */
-.hero {
-    text-align: center;
-    padding: 70px 20px;
-    background: radial-gradient(circle, #0f1c35, #020617);
+.tank-hero{
+  text-align:center;
+  padding:60px 20px;
 }
 
-.hero h1 {
-    font-size: 38px;
+.btn-yellow{
+  background:#f7c600;
+  padding:12px 25px;
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+  display:inline-block;
+  margin-top:15px;
 }
 
-.hero p {
-    color: var(--muted);
-    margin-top: 10px;
+/* FEATURES STRIP */
+.features-strip{
+  background:#ffe600;
+  display:flex;
+  justify-content:space-around;
+  padding:30px 10px;
+  flex-wrap:wrap;
 }
 
-/* ABOUT (RESTORED FULL SECTION) */
-.about {
-    text-align: center;
-    padding: 70px 10%;
-    max-width: 900px;
-    margin: auto;
+.feature{
+  width:180px;
+  text-align:center;
+  margin:10px;
 }
 
-.about h2 {
-    color: var(--blue);
-    margin-bottom: 20px;
-    font-size: 28px;
+/* MAIN GRID */
+.main-grid{
+  display:flex;
+  justify-content:space-between;
+  padding:60px 10%;
+  gap:40px;
+  flex-wrap:wrap;
 }
 
-.about p {
-    color: var(--muted);
-    line-height: 1.9;
-    margin-bottom: 15px;
-    font-size: 15px;
+.why-choose ul{
+  list-style:none;
+  padding:0;
 }
 
-/* PRODUCTS */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-    padding: 40px 8%;
+.why-choose li{
+  padding:6px 0;
 }
 
-.card {
-    background: var(--card);
-    padding: 15px;
-    border-radius: 12px;
-    transition: 0.3s;
+/* BUY SECTION */
+.buy-online{
+  max-width:500px;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.payments img{
+  width:50px;
+  margin:5px;
 }
 
-.card h3 {
-    margin: 10px 0 5px;
+.product-img{
+  width:100%;
+  margin-top:20px;
 }
 
-.card p {
-    font-size: 13px;
-    color: var(--muted);
-    margin-bottom: 10px;
+/* FOOTER */
+.tank-footer{
+  background:#0b2a5b;
+  color:white;
+  display:flex;
+  justify-content:space-around;
+  padding:40px 10px;
+  flex-wrap:wrap;
 }
 
-.images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-bottom: 10px;
+.footer-col{
+  width:200px;
+  margin:10px;
 }
 
-.images img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 8px;
+.footer-col a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  margin:5px 0;
 }
-
-.btn {
-    width: 100%;
-    padding: 12px;
-    background: var(--green);
-    border: none;
-    border-radius: 25px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* FOOTER (RESTORED CLEAN PROFESSIONAL VERSION) */
-footer {
-    background: #020617;
-    padding: 50px 8%;
-    margin-top: 40px;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-}
-
-.footer-box h3 {
-    margin-bottom: 15px;
-    color: white;
-}
-
-.footer-box p,
-.footer-box a {
-    color: var(--muted);
-    text-decoration: none;
-    display: block;
-    margin: 6px 0;
-    font-size: 14px;
-}
-
-.footer-box a:hover {
-    color: white;
-}
-
-.bottom {
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #111a2e;
-    color: var(--muted);
-    font-size: 13px;
-}
-
-/* FLOATING BUTTONS */
-.float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.float a {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-
-.callf { background: var(--blue); }
-.waf { background: var(--green); }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
-    <div class="logo">TOPTank Kenya</div>
-    <div class="header-actions">
-        <a class="call" href="tel: 0117958244">Call</a>
-        <a class="wa" href="https://wa.me/254117958244">WhatsApp</a>
-    </div>
+
+<i class="fas fa-bars fa-2x"></i>
+
+<div class="logo">
+<span>TOP</span><span>TANK</span>
+</div>
+
+<div class="icons">
+
+<i class="fas fa-search"></i>
+
+<div class="cart">
+<i class="fas fa-shopping-bag"></i>
+<span id="cartCount">0</span>
+</div>
+
+</div>
+
 </header>
 
-<!-- HERO -->
-<div class="hero">
-    <h1>Water Tanks & Storage Solutions in Kenya</h1>
-    <p>Affordable, durable and nationwide delivery</p>
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>
+Itisha<br>
+TOPTANK
+</h1>
+
+<p>
+Kenya's #1 Double-layered Tanks
+For All Agricultural Needs,
+Big And Small.
+</p>
+
+<a href="#" class="shop-btn" onclick="showCategory('tanks')">
+SHOP NOW
+</a>
+
 </div>
 
-<!-- ABOUT (RESTORED) -->
-<section class="about">
-    <h2>About TOP Tank Company</h2>
-    <p>
-        TOP Tank Company Kenya is a trusted supplier of high-quality water storage tanks across the country.
-        We provide durable, UV-resistant tanks designed for homes, farms, industries, and commercial use.
-    </p>
-    <p>
-        Our products range from 500L to 10000L, ensuring every customer gets the right storage solution at an affordable price.
-        We deliver across all counties in Kenya with reliable customer support.
-    </p>
+<div class="hero-image"></div>
+
 </section>
 
-<!-- PRODUCTS (UNCHANGED 10 CARDS) -->
-<div class="grid">
+<section class="categories">
+
+<div class="card" onclick="showCategory('tanks')">
+<i class="fas fa-droplet"></i>
+<h3>Tanks</h3>
+</div>
+
+<div class="card" onclick="showCategory('agriculture')">
+<i class="fas fa-leaf"></i>
+<h3>Agriculture</h3>
+</div>
+
+<div class="card" onclick="showCategory('bins')">
+<i class="fas fa-trash"></i>
+<h3>Bins</h3>
+</div>
+
+<div class="card" onclick="showCategory('roadsafety')">
+<i class="fas fa-road"></i>
+<h3>Road Safety</h3>
+</div>
+
+<div class="card" onclick="showCategory('sanitation')">
+<i class="fas fa-hands-bubbles"></i>
+<h3>Sanitation</h3>
+</div>
+
+<div class="card" onclick="showCategory('miscellaneous')">
+<i class="fas fa-box"></i>
+<h3>Miscellaneous</h3>
+</div>
+
+</section>
+
+<section class="category-section" id="tanks">
+
+  <!-- TANKS SECTION -->
+  <h2>Our Products</h2>
+
+  <div class="grid" id="tanks" >
 
     <div class="card">
-        <h3>500L Water Tank</h3>
-        <p>Ideal for residential water storage and daily use.</p>
-        <div class="images">
-            <img src="1000.jfif">
-             <img src="1000.jfif">
-              <p>500 liters ksk 2,250</p>
-        </div>
-        <button class="btn" onclick="order('1000L Water Tank')">Order Now</button>
-    </div>
-
-
-    <div class="card">
-        <h3>1000L Water Tank</h3>
-        <p>Ideal for residential water storage and daily use.</p>
-        <div class="images">
-            <img src="1000.jfif">
-             <img src="1000.jfif">
-              <p>1,000liters ksk 4,500</p>
-        </div>
-        <button class="btn" onclick="order('1000L Water Tank')">Order Now</button>
-    </div>
-
-    <div class="card">
-        <h3>1,500L Water Tank</h3>
-        <p>Ideal for residential water storage and daily use.</p>
-        <div class="images">
-            <img src="1000.jfif">
-             <img src="1000.jfif">
-              <p>1,000liters ksk 7,500</p>
-        </div>
-        <button class="btn" onclick="order('1000L Water Tank')">Order Now</button>
-    </div>
-   
-    <div class="card">
-        <h3>2000L Water Tank</h3>
-        <p>Reliable storage for medium households and farms.</p>
-        <div class="images">
-            <img src="2000.jfif">
-             <img src="2000.jfif">
-             <p>2,000liters ksk 10,500</p>
-        </div>
-        <button class="btn" onclick="order('2000L Water Tank')">Order Now</button>
-    </div>
-
-   
-    <div class="card">
-        <h3>3000L Water Tank</h3>
-        <p>Perfect for small commercial and agricultural use.</p>
-        <div class="images">
-            <img src="3000.jfif">
-            <img src="3000.jfif">
-            <p>3,000liters ksk 14,500</p>
-        </div>
-        <button class="btn" onclick="order('3000L Water Tank')">Order Now</button>
+     
+      
+      <div class="images">
+        <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-99-500x500.jpeg">
+        
+        <h3>1,000l Deluxe Cylindrical Tank</h3>
+        <p>KSh4,500</p>
+      </div>
+      <button class="btn" onclick="order('1,000l Deluxe Cylindrical Tank')">Order Now</button>
     </div>
 
     <div class="card">
-        <h3>3,500L Water Tank</h3>
-        <p>Perfect for small commercial and agricultural use.</p>
-        <div class="images">
-            <img src="3000.jfif">
-            <img src="3000.jfif">
-            <p>3,500liters ksk 16,500</p>
-        </div>
-        <button class="btn" onclick="order('3000L Water Tank')">Order Now</button>
+      
+      
+      <div class="images">
+        <img src="https://www.toptank.com/wp-content/uploads/2021/04/LACNES01_Black_1-scaled-e1621254777975-500x500.jpg">
+        
+        <h3>1,000litre Nestable Tank</h3>
+        <p>KSh4,500</p>
+      </div>
+      <button class="btn" onclick="order('1000L Water Tank')">Order Now</button>
     </div>
 
     <div class="card">
-        <h3>4000L Water Tank</h3>
-        <p>Heavy-duty storage for farms and large households.</p>
-        <div class="images">
-            <img src="4000.jfif">
-            <img src="4000.jfif">
-            <p>4,000liters ksk 18,500</p>
-        </div>
-        <button class="btn" onclick="order('5000L Water Tank')">Order Now</button>
+      
+      <div class="images">
+        <img src="https://www.toptank.com/wp-content/uploads/2021/05/LACREC05_Black_1-9-500x500.jpg">
+       <h3>1,000litre Rectangular Loft Tank</h3>
+        <p>KSh4,500</p>
+      </div>
+      <button class="btn" onclick="order('1500L Water Tank')">Order Now</button>
     </div>
 
-    <div class="card">
-        <h3>5000L Water Tank</h3>
-        <p>Designed for commercial and institutional water storage.</p>
-        <div class="images">
-            <img src="5000.jfif">
-             <img src="5000.jfif">
-             <p>5,000liters ksk 24,500</p>
-        </div>
-        <button class="btn" onclick="order('7500L Water Tank')">Order Now</button>
-    </div>
-   <div class="card">
-        <h3>6000L Water Tank</h3>
-        <p>Designed for commercial and institutional water storage.</p>
-        <div class="images">
-            <img src="5000.jfif">
-             <img src="5000.jfif">
-             <p>6,000liters ksk 26,500</p>
-        </div>
-        <button class="btn" onclick="order('7500L Water Tank')">Order Now</button>
-    </div>
-    <div class="card">
-        <h3>8000L Water Tank</h3>
-        <p>Designed for commercial and institutional water storage.</p>
-        <div class="images">
-            <img src="5000.jfif">
-             <img src="5000.jfif">
-             <p>8,000liters ksk 32,500</p>
-        </div>
-        <button class="btn" onclick="order('7500L Water Tank')">Order Now</button>
-    </div>
-    <div class="card">
-        <h3>10,000L Water Tank</h3>
-        <p>Designed for commercial and institutional water storage.</p>
-        <div class="images">
-            <img src="5000.jfif">
-             <img src="5000.jfif">
-             <p>10,000liters ksk 48,500</p>
-        </div>
-        <button class="btn" onclick="order('7500L Water Tank')">Order Now</button>
-    </div>
-
-    <div class="card">
-        <h3>16000L Water Tank</h3>
-        <p>Large capacity tank for industrial and large-scale use.</p>
-        <div class="images">
-            <img src="16000.jfif">
-            <img src="16000.jfif">
-             <p>16,000liters ksk 98,500</p>
-        </div>
-        <button class="btn" onclick="order('10000L Water Tank')">Order Now</button>
-    </div>
-  <div class="card">
-        <h3>20000L Water Tank</h3>
-        <p>Large capacity tank for industrial and large-scale use.</p>
-        <div class="images">
-            <img src="20000.jfif">
-             <img src="20000.jfif">
-              <p>20,000liters ksk 147,500</p>
-        </div>
-        <button class="btn" onclick="order('10000L Water Tank')">Order Now</button>
-    </div>
-    <div class="card">
-        <h3>24000L Water Tank</h3>
-        <p>Large capacity tank for industrial and large-scale use.</p>
-        <div class="images">
-            <img src="24000.jfif">
-             <img src="24000.jfif">
-              <p>24,000liters ksk 192,000</p>
-             
-        </div>
-        <button class="btn" onclick="order('10000L Water Tank')">Order Now</button>
-    </div>
-      <div class="card">
-        <h3>20mm PVC Pipe</h3>
-        <p>20mm (½”) PVC PipeKES 5,200 (Per 100m)</p>
-        <div class="images">
-            <img src="20mm.jfif">
-             <img src="20mm.jfif">
-        </div>
-        <button class="btn" onclick="order('10000L Water Tank')">Order Now</button>
-    </div>
-    <div class="card">
-        <h3>25mm PVC Pipe</h3>
-        <p>25mm (¾”) PVC Pipe. KES 6,800 (Per 100m)</p>
-        <div class="images">
-            <img src="25mm.jfif">
-             <img src="25mm.jfif">
-        </div>
-        <button class="btn" onclick="order('10000L Water Tank')">Order Now</button>
-    </div>
      <div class="card">
-        <h3>40mm PVC Pipe</h3>
-        <p>40mm (1¼”) PVC PipeKES 12,800 (Per 100m</p>
-        <div class="images">
-            <img src="40mm.jfif">
-             <img src="40mm.jfif">
-        </div>
-        <button class="btn" onclick="order('10000L Water Tank')">Order Now</button>
-    </div>
-</div>
-
-    <!-- (remaining cards unchanged for space) -->
-
-</div>
-
-<!-- FOOTER (RESTORED) -->
-<footer>
-    <div class="footer-grid">
-
-        <div class="footer-box">
-            <h3>TOP Tank Kenya</h3>
-            <p>Leading supplier of durable water storage tanks across Kenya.</p>
-        </div>
-
-        <div class="footer-box">
-            <h3>Quick Links</h3>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Products</a>
-            <a href="#">Contact</a>
-        </div>
-
-        <div class="footer-box">
-            <h3>Contact</h3>
-            <p>📞  0117958244</p>
-            <a href="https://wa.me/254117958244">💬 WhatsApp</a>
-        </div>
-
+      
+      <div class="images">
+        <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-70-500x500.jpeg">
+       <h3>1,500l Standard Cylindrical Tank</h3>
+        <p>KSh7,500</p>
+      </div>
+      <button class="btn" onclick="order('1500L Water Tank')">Order Now</button>
     </div>
 
-    <div class="bottom">
-        © 2026 TOP Tank Company Kenya. All rights reserved.
+    
+     <div class="card">
+      
+      <div class="images">
+        <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-71-500x500.jpeg">
+       <h3>1,500l Standard Cylindrical Tank</h3>
+        <p>KSh7,500</p>
+      </div>
+      <button class="btn" onclick="order('1500L Water Tank')">Order Now</button>
     </div>
-</footer>
 
-<!-- FLOATING BUTTONS -->
-<div class="float">
-    <a class="callf" href="tel: 0117958244">📞</a>
-    <a class="waf" href="https://wa.me/254117958244">💬</a>
+    <div class="card">
+      
+      <div class="images">
+        <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-102-500x500.jpeg">
+       <h3>2,000l Deluxe Cylindrical Tank</h3>
+        <p>KSh10,500</p>
+      </div>
+      <button class="btn" onclick="order('1500L Water Tank')">Order Now</button>
+    </div>
+
+    <div class="card">
+      
+      <div class="images">
+       
+        <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-102-500x500.jpeg">
+
+        <h3>2,000l Standard Cylindrical Tank</h3>
+        <p>KSh10,500</p>
+      </div>
+      <button class="btn" onclick="order('2000L Water Tank')">Order Now</button>
+    </div>
+
+    <div class="card">
+      
+      <div class="images">
+       
+        <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-86-500x500.jpeg">
+
+        <h3>10,000l Standard Cylindrical Tank</h3>
+        <p>KSh48,500</p>
+      </div>
+      <button class="btn" onclick="order('2000L Water Tank')">Order Now</button>
+    </div>
+
+       <div class="card">
+      
+      <div class="images">
+       
+        <img src="https://www.toptank.com/wp-content/uploads/2021/04/TANKS-1-1-scaled-1-e1617825347905-116-500x500.jpeg">
+
+        <h3>10,000l Deluxe Cylindrical Tank</h3>
+        <p>KSh48,500</p>
+      </div>
+      <button class="btn" onclick="order('2000L Water Tank')">Order Now</button>
+    </div>
+    
+  
+</section>
+
+<!-- AGRICULTURE SECTION -->
+
+<section class="category-section" id="agriculture">
+
+<h2 class="category-title">Agriculture</h2>
+<div class="product-grid">
+
+<div class="product-card"
+onclick="openProduct(
+'Wheelbarrow',
+'Heavy duty farm wheelbarrow.',
+'KES 5,500',
+'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/canonical-500x500-1-500x500.jpg">
+
+<div class="product-info">
+<h3>Hopper Tank</h3>
+<p>3,500litre Conical.</p>
+<div class="price">KSh16,500</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Wheelbarrow','5500')">
+Order Now
+</button>
+
 </div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Watering Can',
+'Durable plastic watering can.',
+'KES 950',
+'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/canonical-500x500-1-500x500.jpg">
+
+<div class="product-info">
+<h3>3,000litre Conical Hopper Tank</h3>
+
+<div class="price">KSh14,500</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Watering Can','950')">
+Order Now
+</button>
+
+</div>
+</div>
+
+
+<div class="product-card"
+onclick="openProduct(
+'Seedling Tray',
+'Professional seed starter tray.',
+'KES 650',
+'https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2025/03/LACPLNTS09_EarthBrown_2-500x500.jpg">
+
+<div class="product-info">
+<h3>Round Beige Planter Pot – Modern Linear Wavy Stone-look Finish | 50cm(H) x 40cm(W)</h3>
+
+<div class="price">KSh5,040</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Seedling Tray','650')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Seedling Tray',
+'Professional seed starter tray.',
+'KES 650',
+'https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2025/03/LACPLNTS08_Beige_2--500x500.jpg">
+
+<div class="product-info">
+<h3>Round Beige Planter Pot – Modern Linear Wavy Stone-look Finish | 50cm(H) x 40cm(W)</h3>
+
+<div class="price">KSh5,040</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Seedling Tray','650')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Seedling Tray',
+'Professional seed starter tray.',
+'KES 650',
+'https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2025/03/LACPLNTS10_CharcoalGrey_2-500x500.jpg">
+
+<div class="product-info">
+<h3>Tall Rectangular Beige Planter – Modern Linear Wavy Stone-look Finish | 75cm(H) x 32cm(W)</h3>
+
+<div class="price">KSh9,180</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Seedling Tray','650')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Seedling Tray',
+'Professional seed starter tray.',
+'KES 650',
+'https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2024/04/LACPLNTS04_CharcoalGrey_6-500x500.jpg">
+
+<div class="product-info">
+<h3>TopPlanter: Large Round Planter – 76x76cm</h3>
+
+<div class="price">KSh11,250</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Seedling Tray','650')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Seedling Tray',
+'Professional seed starter tray.',
+'KES 650',
+'https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2024/04/LACPLNTS02_CharcoalGrey_1-500x500.jpg">
+
+<div class="product-info">
+<h3>TopPlanter: Large Square Planter – 76x69cm</h3>
+
+<div class="price">KSh11,250</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Seedling Tray','650')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Seedling Tray',
+'Professional seed starter tray.',
+'KES 650',
+'https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2024/04/LACPLNTS07_Grey_2-500x500.jpg">
+
+<div class="product-info">
+<h3>TopPlanter: Large Tall Angular Planter – 76x39cm</h3>
+
+<div class="price">KSh5,040</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Seedling Tray','650')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Watering Can',
+'Durable plastic watering can.',
+'KES 950',
+'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2024/04/LACPLNTS04_CharcoalGrey_6-500x500.jpg">
+
+<div class="product-info">
+<h3>TopPlanter: Medium Round Planter – 61x61cm</h3>
+
+<div class="price">KSh7,470</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Watering Can','950')">
+Order Now
+</button>
+
+</div>
+</div>
+
+
+</div>
+
+</section>
+
+<!-- BINS SECTION -->
+
+<section class="category-section" id="bins">
+
+<h2 class="category-title">Bins</h2>
+
+<div class="product-grid">
+
+<div class="product-card"
+onclick="openProduct(
+'120L Dustbin',
+'Durable outdoor waste bin.',
+'KES 3,200',
+'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACB1N19_-Green_2-1-500x500.jpg">
+
+<div class="product-info">
+<h3>1,100litre Garbage Bin with Wheels</h3>
+<p>Heavy-duty waste collection bin.</p>
+<div class="price">KSh50,670</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('120L Dustbin','3200')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'240L Dustbin',
+'Large commercial waste bin.',
+'KES 5,900',
+'https://images.unsplash.com/photo-1528323273322-d81458248d40?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACBIN17_Blue_2-1-500x500.jpg">
+
+<div class="product-info">
+<h3>240L Dustbin</h3>
+<p>Large capacity garbage collection.</p>
+<div class="price">KES 5,900</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('240L Dustbin','5900')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'660L Bin',
+'Industrial waste management bin.',
+'KES 18,500',
+'https://images.unsplash.com/photo-1515169067868-5387ec356754?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACBIN28_Black_2-1-500x500.jpg">
+
+<div class="product-info">
+<h3>120litre Garbage Bin with Wheels</h3>
+
+<div class="price">KSh11,250</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('660L Bin','18500')">
+Order Now
+</button>
+
+</div>
+</div>
+
+
+<div class="product-card"
+onclick="openProduct(
+'660L Bin',
+'Industrial waste management bin.',
+'KES 18,500',
+'https://images.unsplash.com/photo-1515169067868-5387ec356754?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACBIN17_Red_1-500x500.jpg">
+
+<div class="product-info">
+<h3>180litre Garbage Bin with Wheels</h3>
+<div class="price">KSh14,850</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('660L Bin','18500')">
+Order Now
+</button>
+
+</div>
+</div>
+
+
+<div class="product-card"
+onclick="openProduct(
+'Traffic Cone',
+'Reflective traffic cone.',
+'KES 750',
+'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACB1N19_Grey_11-500x500.jpg">
+
+<div class="product-info">
+<h3>750litre Garbage Bin with Wheels</h3>
+
+<div class="price">KSh45,450</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Traffic Cone','750')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Traffic Cone',
+'Reflective traffic cone.',
+'KES 750',
+'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACBIN28_Yellow_7-500x500.jpg">
+
+<div class="product-info">
+<h3>90litre Garbage Bin With Wheels & Handle</h3>
+
+<div class="price">KSh10,800</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Traffic Cone','750')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Traffic Cone',
+'Reflective traffic cone.',
+'KES 750',
+'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACBIN34_Red_6-500x500.jpg">
+
+<div class="product-info">
+<h3>90litre Garbage Bin With Wheels, Handle & Foot Pedal</h3>
+
+<div class="price">KSh12,825</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Traffic Cone','750')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Traffic Cone',
+'Reflective traffic cone.',
+'KES 750',
+'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACBIN36_Green_5-500x500.jpg">
+
+<div class="product-info">
+<h3>90litre Hexagonal Dustbin</h3>
+
+<div class="price">KSh7,020</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Traffic Cone','750')">
+Order Now
+</button>
+
+</div>
+</div>
+
+</div>
+
+</section>
+<!-- ROAD SAFETY SECTION -->
+
+<section class="category-section" id="roadsafety">
+
+<h2 class="category-title">Road Safety</h2>
+
+<div class="product-grid">
+
+
+
+<div class="product-card"
+onclick="openProduct(
+'Traffic Cone',
+'Reflective traffic cone.',
+'KES 750',
+'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/Road-Barrier_1-e1621257362148-500x500.png">
+
+<div class="product-info">
+<h3>Angular Road Barrier</h3>
+
+<div class="price">KSh8,775</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Traffic Cone','750')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Speed Bump',
+'Heavy duty speed calming bump.',
+'KES 4,800',
+'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/Road-Traffic-Cone_2-500x500.png">
+
+<div class="product-info">
+<h3>Road Traffic Triangle</h3>
+
+<div class="price">KSh2,070</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Speed Bump','4800')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Speed Bump',
+'Heavy duty speed calming bump.',
+'KES 4,800',
+'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACBARRIER04_Red_2-500x500.jpg">
+
+<div class="product-info">
+<h3>Slimline Interlockable Road Barrier</h3>
+
+<div class="price">KSh9,270</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Speed Bump','4800')">
+Order Now
+</button>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- SANITATION SECTION -->
+
+<section class="category-section" id="sanitation">
+
+<h2 class="category-title">Sanitation</h2>
+
+<div class="product-grid">
+
+<div class="product-card"
+onclick="openProduct(
+'Hand Wash Station',
+'Portable hand washing unit.',
+'KES 15,000',
+'https://images.unsplash.com/photo-1584515933487-779824d29309?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACBASIN02_2-500x500.jpg">
+
+<div class="product-info">
+<h3>100litre Handwash Basin</h3>
+<div class="price">KSh8,730</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Hand Wash Station','15000')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Portable Toilet',
+'Heavy duty mobile sanitation unit.',
+'KES 85,000',
+'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACMAN01_Black_2-500x500.jpg">
+
+<div class="product-info">
+<h3>115cm PE Manhole</h3>
+<div class="price">KSh20,700</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Portable Toilet','85000')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Soap Dispenser',
+'Wall mounted sanitizer dispenser.',
+'KES 1,500',
+'https://images.unsplash.com/photo-1584744982491-665216d95f8b?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACMAN02_NA_1-500x500.jpg">
+
+<div class="product-info">
+<h3>140cm PE Manhole</h3>
+<div class="price">KSh27,900</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Soap Dispenser','1500')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Soap Dispenser',
+'Wall mounted sanitizer dispenser.',
+'KES 1,500',
+'https://images.unsplash.com/photo-1584744982491-665216d95f8b?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACMAN03_2-500x500.jpg">
+
+<div class="product-info">
+<h3>170cm PE Manhole</h3>
+<div class="price">KSh31,050</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Soap Dispenser','1500')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Soap Dispenser',
+'Wall mounted sanitizer dispenser.',
+'KES 1,500',
+'https://images.unsplash.com/photo-1584744982491-665216d95f8b?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACMAN03_2-1-500x500.jpg">
+
+<div class="product-info">
+<h3>190cm PE Manhole</h3>
+<div class="price">KSh37,260</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Soap Dispenser','1500')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Soap Dispenser',
+'Wall mounted sanitizer dispenser.',
+'KES 1,500',
+'https://images.unsplash.com/photo-1584744982491-665216d95f8b?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/pitslab-500x500-1-500x500.jpg">
+
+<div class="product-info">
+<h3>Pit Latrine Slab</h3>
+<div class="price">KSh9,270</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Soap Dispenser','1500')">
+Order Now
+</button>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- MISCELLANEOUS SECTION -->
+
+<section class="category-section" id="miscellaneous">
+
+<h2 class="category-title">Miscellaneous</h2>
+
+<div class="product-grid">
+
+<div class="product-card"
+onclick="openProduct(
+'Storage Box',
+'Multipurpose storage solution.',
+'KES 2,500',
+'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACPLT02_Black_3-500x500.jpg">
+
+<div class="product-info">
+<h3>1tonne Pallet</h3>
+<div class="price">KSh9,810</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Storage Box','2500')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Plastic Crate',
+'Heavy duty stackable crate.',
+'KES 1,850',
+'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACCLBOX04_Green_5-500x500.jpg">
+
+<div class="product-info">
+<h3>30litre TopKool Cooler Box</h3>
+<div class="price">KSh7,200</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Plastic Crate','1850')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Utility Container',
+'Multi-purpose utility container.',
+'KES 3,800',
+'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACCLBOX01_Yellow_60L_5-500x500.jpg">
+
+<div class="product-info">
+<h3>60litre TopKool Cooler box</h3>
+<div class="price">KSh9,810</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Utility Container','3800')">
+Order Now
+</button>
+
+</div>
+</div>
+
+
+<div class="product-card"
+onclick="openProduct(
+'Utility Container',
+'Multi-purpose utility container.',
+'KES 3,800',
+'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACCLBOX02_Blue_80L_5-500x500.jpg">
+
+<div class="product-info">
+<h3>80litre TopKool Cooler box</h3>
+<div class="price">KSh14,940</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Utility Container','3800')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Utility Container',
+'Multi-purpose utility container.',
+'KES 3,800',
+'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACPLT02_Black_2-1-500x500.jpg">
+
+<div class="product-info">
+<h3>Half Tonne Pallet</h3>
+<div class="price">KSh8,820</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Utility Container','3800')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Utility Container',
+'Multi-purpose utility container.',
+'KES 3,800',
+'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACDESK01_Blue_3-1-500x500.jpg">
+
+<div class="product-info">
+<h3>TopDesk School Chair With Integrated Desk & Storage (Large)</h3>
+<div class="price">KSh8,010</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Utility Container','3800')">
+Order Now
+</button>
+
+</div>
+</div>
+
+<div class="product-card"
+onclick="openProduct(
+'Utility Container',
+'Multi-purpose utility container.',
+'KES 3,800',
+'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800'
+)">
+
+<img src="https://www.toptank.com/wp-content/uploads/2021/05/LACDESK01_Blue_2-500x500.jpg">
+
+<div class="product-info">
+<h3>
+TopDesk School Chair With Integrated Desk & Storage (Medium)</h3>
+<div class="price">KSh6,750</div>
+
+<button class="order-btn"
+onclick="event.stopPropagation();orderNow('Utility Container','3800')">
+Order Now
+</button>
+
+</div>
+</div>
+</div>
+
+</section>
+
+</div>
+<!-- END PRODUCTS CONTAINER --><!-- PRODUCT MODAL -->
+
+<div class="modal" id="productModal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeModal()">&times;</span>
+
+<img id="modalImage" src="">
+
+<h2 id="modalTitle"></h2>
+
+<p id="modalDescription"></p>
+
+<h3 id="modalPrice"></h3>
+
+<button class="order-btn"
+onclick="orderCurrentProduct()">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+<!-- WHATSAPP BUTTON -->
+
+<a href="#" class="whatsapp" onclick="openWhatsapp()">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- BOTTOM NAVIGATION -->
+
+<nav class="bottom-nav">
+
+<a href="#" class="active" onclick="goHome()">
+<i class="fas fa-home"></i>
+Home
+</a>
+
+<a href="#" onclick="showCart()">
+<i class="fas fa-cart-shopping"></i>
+Cart
+</a>
+
+<a href="#">
+<i class="fas fa-user"></i>
+Account
+</a>
+
+</nav>
 
 <script>
-function order(product){
-    let phone = "254117958244";
-    let message = "Hello, I want to order: " + product;
-    let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
-    window.open(url, "_blank");
-}
-</script>
 
+let cartCount = 0;
+
+let currentProduct = "";
+let currentPrice = "";
+
+function showCategory(category) {
+
+  // hide all category sections
+  document.querySelectorAll(".category-section").forEach(section => {
+    section.style.display = "none";
+  });
+
+  // show only selected category
+  const selected = document.getElementById(category);
+
+  if (selected) {
+    selected.style.display = "block";
+    selected.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+function openProduct(
+title,
+description,
+price,
+image
+){
+
+currentProduct = title;
+currentPrice = price;
+
+document.getElementById("modalTitle")
+.innerText = title;
+
+document.getElementById("modalDescription")
+.innerText = description;
+
+document.getElementById("modalPrice")
+.innerText = price;
+
+document.getElementById("modalImage")
+.src = image;
+
+document.getElementById("productModal")
+.style.display="flex";
+
+}
+
+function closeModal(){
+
+document.getElementById("productModal")
+.style.display="none";
+
+}
+
+function orderNow(product,price){
+
+cartCount++;
+
+document.getElementById("cartCount")
+.innerText = cartCount;
+
+const phone = "254700000000";
+
+const text =
+`Hello TOPTANK,
+
+I would like to order:
+
+${product}
+
+Price: KES ${price}`;
+
+window.open(
+`https://wa.me/${phone}?text=${encodeURIComponent(text)}`,
+"_blank"
+);
+
+}
+
+function orderCurrentProduct(){
+
+orderNow(
+currentProduct,
+currentPrice.replace("KES ","")
+);
+
+}
+
+function goHome(){
+  document.querySelectorAll(".category-section").forEach(section => {
+    section.style.display = "block";
+  });
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function showCart(){
+
+alert(
+"You currently have " +
+cartCount +
+" item(s) in your cart."
+);
+
+}
+
+function openWhatsapp(){
+
+window.open(
+"https://wa.me/254700000000",
+"_blank"
+);
+
+}
+
+window.onclick = function(event){
+
+const modal =
+document.getElementById("productModal");
+
+if(event.target == modal){
+
+closeModal();
+
+}
+
+};
+
+</script>
+<!-- WATER TANK SECTION START -->
+<section class="water-tank-section">
+
+  <!-- HERO -->
+  <div class="tank-hero">
+    <h1>Are You Looking For A Water Tank?</h1>
+    <p>
+      You’ve come to the right place. We have large range of tanks to suit your needs.
+      Just you can buy them online.
+    </p>
+    <a href="#" class="btn-yellow">FIND A TANK</a>
+  </div>
+    <!-- FEATURES STRIP -->
+  <div class="features-strip">
+    <div class="feature">
+      <h3>UV Protection</h3>
+      <p>High protection against UV rays for longer tank life.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Free Delivery</h3>
+      <p>We offer fast and reliable delivery countrywide.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Quality</h3>
+      <p>Made using advanced polyethylene technology.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Durability</h3>
+      <p>Designed for extreme strength and long life.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Made in Kenya</h3>
+      <p>100% locally manufactured trusted products.</p>
+    </div>
+  </div>
+    <!-- MAIN CONTENT -->
+  <div class="main-grid">
+
+    <!-- LEFT SIDE -->
+    <div class="why-choose">
+      <h2>Why Choose TopTank?</h2>
+
+      <ul>
+        <li>Hygiene</li>
+        <li>Long Lifespan</li>
+        <li>Durable & Stress Resistant</li>
+        <li>Cost Effective</li>
+        <li>Latest Technology</li>
+        <li>Installation</li>
+        <li>Best for Domestic & Commercial Use</li>
+      </ul>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="buy-online">
+      <h2>Buy Online</h2>
+
+      <p>
+        Now you can shop online with TopTank from the comfort of your home or office.
+        Pay easily and securely using mobile or card.
+      </p>
+
+      <div class="payments">
+        <span>We Accept:</span>
+        <img src="mpesa.png" alt="mpesa">
+        <img src="visa.png" alt="visa">
+        <img src="mastercard.png" alt="mastercard">
+      </div>
+
+      <a href="#" class="btn-yellow">BUY A TANK NOW</a>
+
+      <img src="tanks.png" class="product-img" alt="water tanks">
+    </div>
+
+  </div>
+    <!-- FOOTER -->
+  <footer class="tank-footer">
+
+    <div class="footer-col">
+      <h4>About Us</h4>
+      <p>
+        TopTank is manufactured in Kenya using rotational moulding and produced from high grade polyethylene.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="#">All Products</a>
+      <a href="#">Custom Products</a>
+      <a href="#">FAQs</a>
+      <a href="#">About Us</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>My Account</h4>
+      <a href="#">My Account</a>
+      <a href="#">Cart</a>
+      <a href="#">Checkout</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Get In Touch</h4>
+      <p>Mohali, Pakistan / Kenya Office</p>
+      <p>+254 XXX XXX XXX</p>
+      <p>info@toptank.com</p>
+    </div>
+
+  </footer>
+
+</section>
+<!-- WATER TANK SECTION END -->
 </body>
 </html>
